@@ -1,26 +1,5 @@
 
 require "pry"
-class Dog
-    attr_reader :name, :size, :temperment
-    def initialize(name, size, temperment)
-        @name = name
-        @size = size
-        @temperment = temperment
-    end
-
-    def bark 
-        #if quiet? the methods sets temperment == 'quiet'
-        if quiet?
-            puts "#{name}, the #{size} dog, says rf"
-        else
-            puts "#{name}, the #{size} dog"
-        end
-    end
-
-    def quiet?
-        temperment == 'quiet'
-    end
-end
 
 class Song
 
